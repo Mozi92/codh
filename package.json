@@ -1,0 +1,38 @@
+{
+  "name": "codh",
+  "version": "1.0.0",
+  "description": "A collection of data handlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mozi92/codh.git"
+  },
+  "keywords": [
+    "date",
+    "substr",
+    "subArray",
+    "getIndexFromArray"
+  ],
+  "author": "mozi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mozi92/codh/issues"
+  },
+  "homepage": "https://github.com/Mozi92/codh#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "tsify": "^5.0.4",
+    "typescript": "^4.3.5",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^4.0.0"
+  }
+}
