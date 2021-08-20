@@ -1,8 +1,15 @@
-import {sayHello} from "./greet";
+import {Cod_array_i} from "./implements/cod_array_i";
+import {Cod_string_i} from "./implements/cod_string_i";
+import {Cod_date_i} from "./implements/cod_date_i";
 
-function showHello(divName: string, name: string) {
-    const elt = document.getElementById(divName);
-    elt.innerText = sayHello(name);
+export function CodArray() {
+    return new Cod_array_i()
 }
 
-showHello("greeting", "TypeScript");
+export function CodString() {
+    return new Cod_string_i()
+}
+
+export function CodDate() {
+    return new Cod_date_i()
+}

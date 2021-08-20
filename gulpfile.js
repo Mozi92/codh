@@ -1,17 +1,17 @@
-var gulp = require("gulp");
-var browserify = require("browserify");
-var source = require('vinyl-source-stream');
-var watchify = require("watchify");
-var tsify = require("tsify");
-var gutil = require("gulp-util");
-var uglify = require('gulp-uglify');
-var sourcemaps = require('gulp-sourcemaps');
-var buffer = require('vinyl-buffer');
-var paths = {
-    pages: ['src/*.html']
+const gulp = require("gulp");
+const browserify = require("browserify");
+const source = require('vinyl-source-stream');
+const watchify = require("watchify");
+const tsify = require("tsify");
+const gutil = require("gulp-util");
+const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
+const buffer = require('vinyl-buffer');
+const paths = {
+    pages: ['examples/*.html']
 };
 
-var watchedBrowserify = watchify(browserify({
+const watchedBrowserify = watchify(browserify({
     basedir: '.',
     debug: true,
     entries: ['src/main.ts'],
