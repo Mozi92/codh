@@ -14,20 +14,23 @@ describe('CodArray测试', function () {
 
 describe('CodDate测试', function () {
     it('时间测试', function () {
-        const fn=new Cod_date_i()
+        const fn = new Cod_date_i()
         const result = fn.compareDate(new Date(), new Date())
         expect(result).to.be.a('Boolean')
         expect(result).to.be.equal(false)
-        const d=fn.dateFormat(new Date(),'YYYY-MM-DD')
+        const d = fn.dateFormat(new Date(), 'YYYY-MM-DD')
         expect(d.length).to.be.equal(10)
     });
 });
 
 describe('CodString测试', function () {
     it('字符串处理测试', function () {
-        const fn=new Cod_string_i()
-        const str=fn.randomStr(9,15)
-        expect(str.length).to.be.lte(15)
+        const fn = new Cod_string_i()
+        const minLen = fn.randomStr(-1, 5)
+        expect(minLen.length).to.be.lte(6);
+        expect(minLen.length).to.be.gte(1);
+        const str = fn.randomStr(9, 15)
+        expect(str.length).to.be.lte(24)
         expect(str.length).to.be.gte(9)
         const result = new Cod_string_i().substr(str, 6)
         expect(result.length).to.be.lte(str.length)
