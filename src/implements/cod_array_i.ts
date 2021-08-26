@@ -1,14 +1,13 @@
 import {Cod_array} from "../interfaces/cod_array";
 
-// @ts-ignore
-export class Cod_array_i<T> implements Cod_array<T> {
+export class Cod_array_i implements Cod_array {
     /**
      * 随机抽取数组中元素
      * @param source
      * @param begin
      * @param len
      */
-    sampled(source: Array<T>, begin: number, len?: number): Array<T> {
+    sampled(source: Array<any>, begin: number, len?: number): Array<any> {
         if (begin < 1)
             begin = 0
         if (!len || len < 1)

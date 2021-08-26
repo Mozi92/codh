@@ -1,11 +1,15 @@
 {
   "files": [
     "src/main.ts"
+    //    "types/index.d.ts",
+    //    "types/npm.d.ts",
+    //    "types/umd.d.ts",
+    //    "types/mou.d.ts"
   ],
   "compilerOptions": {
     "noImplicitAny": true,
     "module": "commonjs",
-    "declaration": true, // 生成 `.d.ts` 文件
+    "declaration": true,
     "target": "es5",
     "sourceMap": false
   },

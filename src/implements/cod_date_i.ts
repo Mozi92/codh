@@ -1,12 +1,11 @@
 import {Cod_date} from "../interfaces/cod_date";
 
-// @ts-ignore
 export class Cod_date_i implements Cod_date {
     /**
      * 判断字符串是否为空
      * @param str
      */
-    isEmpty(str: string) {
+    private isEmpty(str: string) {
         if (str === null || str === undefined) {
             return true;
         } else {

@@ -11,5 +11,6 @@ describe('测试main函数', () => {
             sum++
         }
         expect(sum).to.be.equal(3)
+        Cod.Cod_date()
     });
 })

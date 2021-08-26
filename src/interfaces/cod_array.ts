@@ -1,3 +1,3 @@
-export interface Cod_array<T> {
-    (source: Array<T>, begin: number, len?: number): Array<T>,//取数组随中随机指定的元素
+export interface Cod_array {
+    sampled(source: Array<any>, begin: number, len?: number): Array<any>,//取数组随中随机指定的元素
 }

@@ -1,6 +1,5 @@
 import {Cod_string} from "../interfaces/cod_string";
 
-// @ts-ignore
 export class Cod_string_i implements Cod_string {
     randomStr(min: number, max: number): string {
         if (min < 1)

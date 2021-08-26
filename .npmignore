@@ -3,4 +3,4 @@ src/
 coverage/
 .nyc_output/
 examples/
-test/
+jsSource/
