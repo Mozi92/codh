@@ -1,9 +1,9 @@
 {
   "files": [
-    "src/main.ts"
-    //    "types/index.d.ts",
+    "src/main.ts",
+    //    "types/index.d.ts"
     //    "types/npm.d.ts",
-    //    "types/umd.d.ts",
+    "types/umd.d.ts"
     //    "types/mou.d.ts"
   ],
   "compilerOptions": {

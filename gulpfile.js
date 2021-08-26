@@ -46,7 +46,7 @@ function bundle() {
 gulp.task("serve", gulp.series("copy-html", bundle));
 
 gulp.task('build', gulp.series('clean', function () {
-    let tsResult = gulp.src("src/**/*.ts")
+    let tsResult = gulp.src(["src/**/*.ts", "types/**/*.ts"])
         .pipe(tsProject());
     return merge([
         tsResult.dts.pipe(gulp.dest('dist/definitions')),

@@ -1,6 +1,6 @@
 {
   "name": "codh",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A collection of data handlers",
   "main": "./dist/main.js",
   "types": "./dist/definitions/main.d.ts",
