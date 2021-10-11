@@ -14,6 +14,50 @@ let x = {a: 1, b: 2, c: 3, d: 4}
 let y = copyFields(x, {b: 10, d: 20});
 console.log(y)
 
+interface Fish {
+    swim(): any;
+
+    layEggs(): any;
+}
+
+interface Bird {
+    fly(): any;
+
+    layEggs(): any;
+}
+
+class Pet implements Fish, Bird {
+    fly(): any {
+        console.log('i am a bird')
+    }
+
+    layEggs(): any {
+    }
+
+    swim(): any {
+        console.log('i am a fish')
+    }
+
+}
+
+function getSmallPet() {
+    let pet = new Pet()
+    let p = <Fish>pet
+    console.log('pet------------------', p.swim())
+    if (isFish(pet)) {
+        console.log(pet.fly())
+    } else {
+        console.log('pet------------------', p.swim())
+    }
+}
+
+function isFish(pet: Fish | Bird): pet is Fish {
+    return (<Fish>pet).swim !== undefined;
+}
+
+getSmallPet()
+
+
 export function Cod_date() {
     return new Cod_date_i()
 }
